@@ -84,9 +84,9 @@ jobs:
       # =================================================================
       # 11. Rename the generated APK
       # =================================================================
-      - name: photo-gallery.apk
+      - name: book-collection.apk
         run: |
-          cp android/app/build/outputs/apk/debug/app-debug.apk photo-gallery.apk
+          cp android/app/build/outputs/apk/debug/app-debug.apk book-collection.apk
 
       # =================================================================
       # 12. Upload APK to GitHub Actions
@@ -94,8 +94,8 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: PhotoGallery-APK
-          path: photo-gallery.apk
+          name: BookCollection-APK
+          path: book-collection.apk
           if-no-files-found: error
           retention-days: 30
 
