@@ -2,7 +2,7 @@ import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'io.ionic.bookcollection',
-  appName: 'book-collection',
+  appName: 'Book Collection Manager',
   webDir: 'dist'
 };
 
